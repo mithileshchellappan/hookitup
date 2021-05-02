@@ -3,9 +3,7 @@ import axios from "axios";
 const Search = () => {
   const [term, setTerm] = useState("");
   useEffect(() => {
-    (async () => {
-      await axios.get("https://www.wikipedia.com");
-    })();
+   axios.get().then((response)=>{console.log(response.data)})
   }, [term]);
   return (
     <div>
