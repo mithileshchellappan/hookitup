@@ -1,13 +1,12 @@
-import React, { useState,useEffect } from "react";
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 const Search = () => {
   const [term, setTerm] = useState("");
-  useEffect(()=>{
-    const search = async()=>{
-        await axios.get('google.com')
-    }
-    search()
-  },[term])
+  useEffect(() => {
+    (async () => {
+      await axios.get("https://www.wikipedia.com");
+    })();
+  }, [term]);
   return (
     <div>
       <div className="ui form">
