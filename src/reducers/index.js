@@ -12,7 +12,7 @@ const songsReducer=()=>{
     ]
 };
 
-const selectedSongReducer=(action,selectedSong=null,)=>{
+const selectedSongReducer=(selectedSong=null,action)=>{
     if(action.type==='SONG_SELECTED'){
         return action.payload;
     }
