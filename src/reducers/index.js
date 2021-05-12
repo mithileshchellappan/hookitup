@@ -1,3 +1,3 @@
-import {combineReducers} from 'redux';
-
-export default combineReducers({wow:()=>10});
+import { combineReducers } from "redux";
+import postsReducer from "./postsReducer";
+export default combineReducers({ posts: postsReducer });
