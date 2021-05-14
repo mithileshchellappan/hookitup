@@ -1,7 +1,15 @@
-import React from 'react';
-
-const StreamCreate=()=>{
-    return(<div>StreamCreate</div>)
+import React, { Component } from 'react'
+import {Field,reduxForm} from 'redux-form'
+ class StreamCreate extends Component {
+    render() {
+        return (
+            <form>
+                <Field/>
+            </form>
+        )
+    }
 }
 
-export default StreamCreate
+export default reduxForm({
+    form:'streamCreate'
+})(StreamCreate);

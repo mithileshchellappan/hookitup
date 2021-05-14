@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux'
-
+import authReducer from './authreducer'
+import {reducer as formReducer} from 'redux-form'
 export default combineReducers({
-    replace:()=>'wow'
+    auth:authReducer,
+    form:formReducer
 })
